@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+# ✅ React To-Do List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and functional **To-Do List application built with React** that allows users to add, edit, complete, and delete tasks. This project focuses on core React concepts like state management, props, conditional rendering, and component-based architecture.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- ➕ Add new tasks  
+- ✏️ Edit existing tasks  
+- ✅ Mark tasks as completed  
+- 🗑️ Delete tasks  
+- 🎯 Unique task IDs using UUID  
+- 🎨 Icons using Font Awesome  
+- ⚛️ Fully component-based React architecture  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🧠 Concepts Used
 
-### `npm test`
+- React Functional Components  
+- `useState` Hook  
+- Props & Parent–Child Communication  
+- Conditional Rendering  
+- Event Handling  
+- Array methods (`map`, `filter`)  
+- Controlled Components  
+- UUID for unique keys  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React (Create React App)
+- JavaScript (ES6+)
+- CSS
+- UUID
+- Font Awesome
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📂 Project Structure
 
-### `npm run eject`
+```
+src/
+│
+├── components/
+│   ├── Todo.js
+│   ├── TodoForm.js
+│   ├── EditTodoForm.js
+│   └── TodoWrapper.js
+│
+├── App.js
+├── App.css
+└── index.js
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Installation & Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/react-todo-app.git
+cd react-todo-app
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies
+```bash
+npm install
+```
 
-## Learn More
+3. Install required packages
+```bash
+npm install uuid
+npm install @fortawesome/react-fontawesome
+npm install @fortawesome/free-solid-svg-icons
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Start the development server
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app will run at:  
+`http://localhost:3000`
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧩 How It Works
 
-### Analyzing the Bundle Size
+- **TodoWrapper**  
+  Manages the main `todos` state and contains logic for adding, editing, deleting, and completing tasks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **TodoForm**  
+  Handles user input for adding new tasks.
 
-### Making a Progressive Web App
+- **Todo**  
+  Displays individual tasks with complete, edit, and delete actions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **EditTodoForm**  
+  Allows updating an existing task when edit mode is enabled.
 
-### Advanced Configuration
+State is lifted to the parent component so multiple child components can access and modify it via props.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📸 App Functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Type a task and press **Enter** or click **Add Task**
+- Click on a task to mark it **completed**
+- Click ✏️ to **edit** a task
+- Click 🗑️ to **delete** a task
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🎯 Future Improvements
+
+- Persist todos using `localStorage`
+- Add drag-and-drop support
+- Add task priorities or due dates
+- Improve UI with animations
+
+---
+
+## 🙌 Acknowledgements
+
+Built as a practice project to strengthen React fundamentals and component-based development.
+
+⭐ If you like this project, consider starring the repository!
